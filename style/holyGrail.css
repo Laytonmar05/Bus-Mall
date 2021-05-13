@@ -1,11 +1,7 @@
 html, body {
     height: 100%;    
   }
-  
-  body > * {
-    border:3px solid gold;
-  }
-  
+   
   body > header, body > footer {
     background:#444;
     color:gold;
@@ -13,6 +9,10 @@ html, body {
     line-height:70px;
     text-align:center;
   }
+  body > * {
+    border:3px solid gold;
+  }
+ 
   ul li{
       color:gold;
   }
@@ -24,12 +24,7 @@ html, body {
   main > .content {
     background: #444;;
   }
-  
-  main > aside {
-    background: #444;;
-    height: 100%
-  }
-  
+ 
   main > nav {
     background: #444;;
     height: 100%;
@@ -41,6 +36,17 @@ html, body {
   }
   nav > ul {
     list-style-type: none;
+  }
+    .navAlign {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color: #444;
+  }
+  main > aside {
+    background: #444;;
+    height: 100%
   }
   
   .deck {
@@ -59,13 +65,7 @@ html, body {
     align-items: center;
   }
   
-  .navAlign {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:flex-start;
-    background-color: #444;
-  }
+ 
   
   
   a:link {
