@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;    
+  }
+  
+  body > * {
+    border:3px solid gold;
+  }
+  
+  body > header, body > footer {
+    background:#444;
+    color:gold;
+    height: 70px;
+    line-height:70px;
+    text-align:center;
+  }
+  ul li{
+      color:gold;
+  }
+  
+  main {
+    background: #444;
+  }
+  
+  main > .content {
+    background: #444;;
+  }
+  
+  main > aside {
+    background: #444;;
+    height: 100%
+  }
+  
+  main > nav {
+    background: #444;;
+    height: 100%;
+    font-size: 1.25em;
+  }
+  
+  aside > ul {
+    list-style-type: none;
+  }
+  nav > ul {
+    list-style-type: none;
+  }
+  
+  .deck {
+    background: navy;
+  }
+  
+  .deck:first-child {
+    border-bottom: 3px solid gold;
+  }
+  
+  
+  .centerWords {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navAlign {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color: #444;
+  }
+  
+  
+  a:link {
+    color: gold;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: gold;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: gold;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: gold;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  ul {
+    line-height: 250%
+  }
+  
