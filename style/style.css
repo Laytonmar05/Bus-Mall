@@ -9,12 +9,6 @@ main {
   main > nav {
     order: 1;
   
-  } 
-  .imgCards {
-    height: 250px;
-    width: 250px;
-    background: lightgray;
-    text-align: center;
   }
   
   main > .content {
@@ -22,18 +16,29 @@ main {
     display: grid;
     grid-template-rows: 50% 50%
   }
-  .chart {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .deck {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
+  .chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* McCall - this is the container where the images are... so see how i limit the width and height? */
+  /* You can also look up how to size images on Google. There are 2-3 other ways to do it */
+  .imgCards { 
+    height: 250px;
+    width: 250px;
+    background: lightgray;
+    text-align: center;
+  }
+  
   
   main > aside {
     order: 3;
