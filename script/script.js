@@ -1,21 +1,22 @@
-console.log("Hello World")
+'use strict'
+// console.log("Hello World")
 
-let img1 = document.getElementById('img1');
-let img2 = document.getElementById('img2');
-let img3 = document.getElementById('img3');
+// let img1 = document.getElementById('img1');
+// let img2 = document.getElementById('img2');
+// let img3 = document.getElementById('img3');
 
-img1.addEventListener('click', runFunctionImage1); 
-img2.addEventListener('click', function(){ 
-  console.log('I am in img2');
-})
+// img1.addEventListener('click', runFunctionImage1); 
+// img2.addEventListener('click', function(){ 
+//   console.log('I am in img2');
+// })
 
-img3.addEventListener('click', function(){
-  console.log('I am in img3');
-})
+// img3.addEventListener('click', function(){
+//   console.log('I am in img3');
+// })
 
-function runFunctionImage1() {
-    console.log('I am in img1')
-}
+// function runFunctionImage1() {
+//     console.log('I am in img1')
+// }
 
 let PRODUCTS_ARRAY = [
   { HTMLid : 'bag', imgURL: '../images/bag.jpg', totalViews: 0,totalVotes: 0},
@@ -38,8 +39,26 @@ let PRODUCTS_ARRAY = [
   { HTMLid : 'water-can', imgURL: '../images/water-can.jpg', totalViews: 0,totalVotes: 0},
   { HTMLid : 'wine-glass', imgURL: '../images/wine-glass.jpg', totalViews: 0,totalVotes: 0},]
 
-function handleClick() {
+  function renderImages() {
+    for(let i=0; i <= 2; i++){
+        let imgContainer = document.getElementById(`img${i}Container`);
+        let img = document.createElement('img');
+        imgContainer.appendChild(img);
+        img.setAttribute('src', PRODUCTS_ARRAY[i].imgURL);
+        img.setAttribute('id', PRODUCTS_ARRAY[i].HTMLid);
+    }
 }
 
-function renderImages() {
+function handleClick(event) {
+    clicks = clicks + 1;
+    console.log('I was clicked, and my id is', event.target.id);
+    let parentId = event.target.id
 }
+(function startApp(){
+for(let i=0; i < 3; i++){
+let imgContainer = document.getElementById(`img${i}Container`);
+imgContainer.addEventListener('click', handleClick);
+}
+renderImages();
+
+})();
