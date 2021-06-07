@@ -48,3 +48,7 @@ main {
   main > aside {
     order: 3;
   }
+  #resultSection{
+    color:gold;
+    font-size: 13px;
+  }
